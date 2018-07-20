@@ -2,6 +2,8 @@ package com.situ.day2;
 
 import static org.hamcrest.CoreMatchers.instanceOf;
 
+import java.awt.print.Printable;
+
 public class FunctionDemo {
 	public static void main(String[] args) {
 		int num1 = 13;
@@ -18,6 +20,7 @@ public class FunctionDemo {
 		System.out.println("maxValue: " + maxValue);
 	}
 	
+
 	/**
 	 * 求两个数的最大值
 	 * @param num1 传入的数值1
@@ -26,7 +29,7 @@ public class FunctionDemo {
 	 */
 	public static int max(int num1, int num2) {
 		int max;
-		if (num1 >= num2) {
+		if (num1 > num2) {
 			max = num1;
 		}else {
 			max = num2;

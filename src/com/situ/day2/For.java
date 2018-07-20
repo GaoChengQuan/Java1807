@@ -86,6 +86,7 @@ public class For {
 		for(int i = 1; i <= 9; i++) {
 			for(int j = 1; j <= i; j++) {
 				// 1*7=7 2*7=14 ...
+				//System.out.println(j + "*" + i + "=" + (j * i));
 				System.out.print(j + "*" + i + "=" + (j * i) + "\t");
 			}
 			System.out.println();
