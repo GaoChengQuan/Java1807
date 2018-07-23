@@ -2,6 +2,8 @@ package com.situ.day1;
 
 import static org.junit.Assert.assertThat;
 
+import javax.swing.plaf.ViewportUI;
+
 import org.junit.Test;
 
 public class HelloWorld {
@@ -42,5 +44,16 @@ public class HelloWorld {
 		System.out.println(sum);
 	}
 	
+	@Test
+public void test4() {
+	char ch = 'a'; // 97
+	System.out.println(ch);
+	System.out.println(ch + 1);// 97+1=98从小到大自动类型转换
+	System.out.println(ch + 2);// 97+2=99从小到大自动类型转换
+	System.out.println((char)(ch + 1));// b 从大到小需要强制类型转换
+	System.out.println((char)(ch + 2));// c 从大到小需要强制类型转换
+	char ch2 = '中';
+	System.out.println(ch2);//中
+}
 	
 }
