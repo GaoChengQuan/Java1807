@@ -6,19 +6,19 @@ public class Cal {
 	
 	@Test
 	public void test1() {
-		// "="²»ÊÇÏàµÈµÄÒâË¼£¬ÊÇ¸³ÖµµÄÒâË¼
-		// "=="À´ÅĞ¶ÏÊÇ²»ÊÇÏàµÈ
+		// "="ä¸æ˜¯ç›¸ç­‰çš„æ„æ€ï¼Œæ˜¯èµ‹å€¼çš„æ„æ€
+		// "=="æ¥åˆ¤æ–­æ˜¯ä¸æ˜¯ç›¸ç­‰
 		int num1 = 3;
 		int num2 = 5;
 		int result = num1 + num2;
 		System.out.println(result);
 		System.out.println(num1 + num2);
-		System.out.println(8 / 2);//ÉÌ  4
-		System.out.println(8 % 2);//ÓàÊı 0
-		System.out.println(8 / 3);//ÉÌ  2
-		System.out.println(8 % 3);//ÓàÊı 2
-		System.out.println(2 / 7);//ÉÌ  0
-		System.out.println(2 % 7);//ÓàÊı 2
+		System.out.println(8 / 2);//å•†  4
+		System.out.println(8 % 2);//ä½™æ•° 0
+		System.out.println(8 / 3);//å•†  2
+		System.out.println(8 % 3);//ä½™æ•° 2
+		System.out.println(2 / 7);//å•†  0
+		System.out.println(2 % 7);//ä½™æ•° 2
 	}
 	
 	@Test
@@ -33,7 +33,7 @@ public class Cal {
 		int num2 = 5;
 		num1 = num1 + 1;
 		num1++;
-		System.out.println(num2++);//ÏÈÊ¹ÓÃnum2µÄÖµ£¬ÔÙ×ÔÔö
+		System.out.println(num2++);//å…ˆä½¿ç”¨num2çš„å€¼ï¼Œå†è‡ªå¢
 		System.out.println(2 + num2++);// 8
 		System.out.println(num2);//7
 	}
@@ -51,11 +51,11 @@ public class Cal {
 	public void test5() {
 		int num1 = 3;
 		int num2 = 5;
-		// &&¶ÌÂ·
+		// &&çŸ­è·¯
 		System.out.println(num1 < 0 && num1++ < num2);//false
 		System.out.println(num1);// 3
 		System.out.println(num2);// 5
-		// || ¶ÌÂ·
+		// || çŸ­è·¯
 		System.out.println(num1 > 0 || num1++ < num2);
 		System.out.println(num1);// 3
 		System.out.println(num2);// 5
@@ -65,7 +65,7 @@ public class Cal {
 	public void test6() {
 		int num1 = 3;
 		int num2 = 5;
-		// Óï·¨£ºboolean ? Êı1 £º Êı2
+		// è¯­æ³•ï¼šboolean ? æ•°1 ï¼š æ•°2
 		int max = num1 > num2 ? num1 : num2;
 		System.out.println(max);
 	}
@@ -73,10 +73,10 @@ public class Cal {
 	@Test
 	public void test7() {
 		int age = 22;
-		// ÎÒµÄÄêÁäÊÇ22
-		System.out.println("ÎÒµÄÄêÁäÊÇ" + age);
-		//ÎÒ20ËêÁË     ¶¹¶¹¼Ó¼Ó
-		System.out.println("ÎÒ" + age + "ËêÁË");
+		// æˆ‘çš„å¹´é¾„æ˜¯22
+		System.out.println("æˆ‘çš„å¹´é¾„æ˜¯" + age);
+		//æˆ‘20å²äº†     è±†è±†åŠ åŠ 
+		System.out.println("æˆ‘" + age + "å²äº†");
 		System.out.println(10 + 20 + "" + 30);// 3030
 		System.out.println("" + 10 + 20 + 30);// 102030
 	}
@@ -97,7 +97,7 @@ public class Cal {
 		System.out.println("before num1: " + num1);
 		System.out.println("before num2: " + num2);
 		
-		int temp = num1;//±¸·İÒ»ÏÂnum1µÄÖµ
+		int temp = num1;//å¤‡ä»½ä¸€ä¸‹num1çš„å€¼
 		num1 = num2;
 		num2 = temp;
 		

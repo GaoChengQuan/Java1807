@@ -1,40 +1,36 @@
 package com.situ.day1;
 
-import static org.junit.Assert.assertThat;
-
-import javax.swing.plaf.ViewportUI;
-
 import org.junit.Test;
 
 public class HelloWorld {
-	
+
 	public static void main(String[] args) {
 		System.out.println("Hello World");
 		int num;
 		num = 3;
 		num = 4;
-		// int ÀàĞÍ£¬numÊÇÕâÖÖÀàĞÍµÄÒ»¸ö±äÁ¿
+		// int ç±»å‹ï¼Œnumæ˜¯è¿™ç§ç±»å‹çš„ä¸€ä¸ªå˜é‡
 		int num2 = 4;
 		String name = "zhansgan";
 		name = "lisi";
 		double d = 3.14;
-		//num = 3.0;
-		
-		char ch1 = 'ÖĞ';
+		// num = 3.0;
+
+		char ch1 = 'ä¸­';
 		System.out.println(ch1);
 		char ch2 = 'a';
 		System.out.println(ch2);
-		
+
 	}
-	
+
 	@Test
 	public void ttt() {
 		System.out.println("HelloWorld.ttt()");
 	}
-	
+
 	@Test
 	public void test1() {
-		int sum  = 1;
+		int sum = 1;
 		int i = 1;
 		while (i <= 100) {
 			sum = sum * i;
@@ -43,17 +39,17 @@ public class HelloWorld {
 		}
 		System.out.println(sum);
 	}
-	
+
 	@Test
-public void test4() {
-	char ch = 'a'; // 97
-	System.out.println(ch);
-	System.out.println(ch + 1);// 97+1=98´ÓĞ¡µ½´ó×Ô¶¯ÀàĞÍ×ª»»
-	System.out.println(ch + 2);// 97+2=99´ÓĞ¡µ½´ó×Ô¶¯ÀàĞÍ×ª»»
-	System.out.println((char)(ch + 1));// b ´Ó´óµ½Ğ¡ĞèÒªÇ¿ÖÆÀàĞÍ×ª»»
-	System.out.println((char)(ch + 2));// c ´Ó´óµ½Ğ¡ĞèÒªÇ¿ÖÆÀàĞÍ×ª»»
-	char ch2 = 'ÖĞ';
-	System.out.println(ch2);//ÖĞ
-}
-	
+	public void test4() {
+		char ch = 'a'; // 97
+		System.out.println(ch);
+		System.out.println(ch + 1);// 97+1=98ä»å°åˆ°å¤§è‡ªåŠ¨ç±»å‹è½¬æ¢
+		System.out.println(ch + 2);// 97+2=99ä»å°åˆ°å¤§è‡ªåŠ¨ç±»å‹è½¬æ¢
+		System.out.println((char) (ch + 1));// b ä»å¤§åˆ°å°éœ€è¦å¼ºåˆ¶ç±»å‹è½¬æ¢
+		System.out.println((char) (ch + 2));// c ä»å¤§åˆ°å°éœ€è¦å¼ºåˆ¶ç±»å‹è½¬æ¢
+		char ch2 = 'ä¸­';
+		System.out.println(ch2);// ä¸­
+	}
+
 }

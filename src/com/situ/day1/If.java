@@ -7,32 +7,32 @@ import org.junit.Test;
 public class If {
 	@Test
 	public void test1() {
-		//ÅĞ¶ÏÑ§Éú³É¼¨µÄµÇ¼Ç
-		//>=90   <=100   ÓÅĞã 
-		//>=80    <90       Á¼ºÃ
-		//>=70    <80       Ò»°ã
-		//>=60    <70      ¼°¸ñ
-		//<60                    ²»¼°¸ñ
+		//åˆ¤æ–­å­¦ç”Ÿæˆç»©çš„ç™»è®°
+		//>=90   <=100   ä¼˜ç§€ 
+		//>=80    <90       è‰¯å¥½
+		//>=70    <80       ä¸€èˆ¬
+		//>=60    <70      åŠæ ¼
+		//<60                    ä¸åŠæ ¼
 		Scanner scanner = new Scanner(System.in);
 		//int num = 37;
-		System.out.println("ÇëÊäÈëÑ§ÉúµÄ³É¼¨£º");
+		System.out.println("è¯·è¾“å…¥å­¦ç”Ÿçš„æˆç»©ï¼š");
 		int num = scanner.nextInt();
 		
 		if (num < 0 || num > 100) {
-			System.out.println("ÊäÈëµÄ³É¼¨·Ç·¨£¡");
-			return;//Óöµ½Õâ¸öreturn£¬ÏÂÃæ´úÂë¶¼²»Ö´ĞĞ
+			System.out.println("è¾“å…¥çš„æˆç»©éæ³•ï¼");
+			return;//é‡åˆ°è¿™ä¸ªreturnï¼Œä¸‹é¢ä»£ç éƒ½ä¸æ‰§è¡Œ
 		}
 		
 		if (num >= 90) {
-			System.out.println("ÓÅĞã");
+			System.out.println("ä¼˜ç§€");
 		} else if (num >= 80 && num < 90) {
-			System.out.println("Á¼ºÃ");
+			System.out.println("è‰¯å¥½");
 		} else if (num >= 70 && num < 80) {
-			System.out.println("Ò»°ã");
+			System.out.println("ä¸€èˆ¬");
 		} else if (num >= 60 && num < 70) {
-			System.out.println("¼°¸ñ");
+			System.out.println("åŠæ ¼");
 		} else {
-			System.out.println("²»¼°¸ñ");
+			System.out.println("ä¸åŠæ ¼");
 		}
 	}
 	
@@ -41,9 +41,9 @@ public class If {
 		int num = 600;
 		if ((num % 4 == 0 && num % 100 != 0) 
 				|| (num % 400 == 0)) {
-			System.out.println("ÊÇÈòÄê");
+			System.out.println("æ˜¯é—°å¹´");
 		} else {
-			System.out.println("²»ÊÇÈòÄê");
+			System.out.println("ä¸æ˜¯é—°å¹´");
 		}
 	}
 }

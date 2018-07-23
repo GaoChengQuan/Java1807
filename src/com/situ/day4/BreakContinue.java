@@ -45,13 +45,13 @@ public class BreakContinue {
 		array[2] = 4;
 		array[3] = 56;
 		int result = sum(array);
-		System.out.println("Êı×éÀÛ¼ÓºÍ£º" + result);
+		System.out.println("æ•°ç»„ç´¯åŠ å’Œï¼š" + result);
 	}
 	
 	/**
-	 * ·µ»ØÊı×éµÄÀÛ¼ÓºÍ
-	 * @param array ´«ÈëÊı×é
-	 * @return ÀÛ¼ÓºÍ
+	 * è¿”å›æ•°ç»„çš„ç´¯åŠ å’Œ
+	 * @param array ä¼ å…¥æ•°ç»„
+	 * @return ç´¯åŠ å’Œ
 	 */
 	public int sum(int[] array) {
 		int sum = 0;

@@ -8,67 +8,57 @@ import org.junit.Test;
 
 public class Work {
 
-	// ¼ÆËãÄ³ÄêÊÇ²»ÊÇÈòÄê£º
-	// 1¡¢ÄÜ±»4Õû³ı£¬µ«ÊÇ²»ÄÜ±»100Õû³ı &&
+	// è®¡ç®—æŸå¹´æ˜¯ä¸æ˜¯é—°å¹´ï¼š
+	// 1ã€èƒ½è¢«4æ•´é™¤ï¼Œä½†æ˜¯ä¸èƒ½è¢«100æ•´é™¤ &&
 	// ||
-	// 2¡¢ÄÜ±»400Õû³ı
+	// 2ã€èƒ½è¢«400æ•´é™¤
 	// () || ()
 	@Test
 	public void test1() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÄê·İ£º");
+		System.out.println("è¯·è¾“å…¥å¹´ä»½ï¼š");
 		int year = scanner.nextInt();
 		if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
-			System.out.println(year + "ÊÇÈòÄê");
+			System.out.println(year + "æ˜¯é—°å¹´");
 		} else {
-			System.out.println(year + "²»ÊÇÈòÄê");
+			System.out.println(year + "ä¸æ˜¯é—°å¹´");
 		}
 	}
 
-	// ×÷Òµ£º
-	// 1¡¢±àĞ´Ò»¸öÊÕÒøÌ¨ÊÕ¿î³ÌĞò£¬if
-	// ¶¨ÒåÊäÈë----µ¥¼Û¡¢ÊıÁ¿¡¢½ğ¶î
-	// ¶¨ÒåÊä³ö----Ó¦ÊÕ½ğ¶î¡¢ÕÒÁã
-	// Ê¹ÓÃdoubleÀàĞÍ±äÁ¿
+	// ä½œä¸šï¼š
+	// 1ã€ç¼–å†™ä¸€ä¸ªæ”¶é“¶å°æ”¶æ¬¾ç¨‹åºï¼Œif
+	// å®šä¹‰è¾“å…¥----å•ä»·ã€æ•°é‡ã€é‡‘é¢
+	// å®šä¹‰è¾“å‡º----åº”æ”¶é‡‘é¢ã€æ‰¾é›¶
+	// ä½¿ç”¨doubleç±»å‹å˜é‡
 	//
-	// 2¡¢µ±×Ü¼Û>=500Ê±ºò´ò°ËÕÛ
+	// 2ã€å½“æ€»ä»·>=500æ—¶å€™æ‰“å…«æŠ˜
 	//
-	// 3¡¢¿¼ÂÇ³ÌĞò³öÏÖÒì³£µÄÇé¿ö£¬Èç£ºÊÕ¿î½ğ¶îĞ¡ÓÚÓ¦ÊÕ½ğ¶î
-	// ÈôÊÕ¿î½ğ¶î´óÓÚµÈÓÚÓ¦ÊÕ½ğ¶î£¬Ôò¼ÆËãÕÒÁãºóÊä³ö
-	// ÈôÊÕ¿î½ğ¶îĞ¡ÓÚÓ¦ÊÕ½ğ¶î£¬Êä³ö´íÎóĞÅÏ¢¡£
+	// 3ã€è€ƒè™‘ç¨‹åºå‡ºç°å¼‚å¸¸çš„æƒ…å†µï¼Œå¦‚ï¼šæ”¶æ¬¾é‡‘é¢å°äºåº”æ”¶é‡‘é¢
+	// è‹¥æ”¶æ¬¾é‡‘é¢å¤§äºç­‰äºåº”æ”¶é‡‘é¢ï¼Œåˆ™è®¡ç®—æ‰¾é›¶åè¾“å‡º
+	// è‹¥æ”¶æ¬¾é‡‘é¢å°äºåº”æ”¶é‡‘é¢ï¼Œè¾“å‡ºé”™è¯¯ä¿¡æ¯ã€‚
 	@Test
 	public void test2() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëµ¥¼Û:");
+		System.out.println("è¯·è¾“å…¥å•ä»·:");
 		double unitPrice = scanner.nextDouble();
-		System.out.println("ÇëÊäÈëÊıÁ¿£º");
+		System.out.println("è¯·è¾“å…¥æ•°é‡ï¼š");
 		double count  = scanner.nextDouble();
-		System.out.println("ÇëÊäÈëÓÃ»§½ğ¶î£º");
+		System.out.println("è¯·è¾“å…¥ç”¨æˆ·é‡‘é¢ï¼š");
 		double price =  scanner.nextDouble();
 		
-		//Ó¦ÊÕ½ğ¶î
+		//åº”æ”¶é‡‘é¢
 		double  totalPrice = unitPrice *count;
 		if (totalPrice >= 500) {
 			totalPrice = totalPrice *0.8;
 			//totalPrice *= 0.8;
 		}
-		//ÕÒÁã
+		//æ‰¾é›¶
 		double returnPrice = price - totalPrice;
 		if (returnPrice >= 0) {
-			System.out.println("Ó¦ÊÕ½ğ¶î" + totalPrice);
-			System.out.println("ÕÒÁã£º " + returnPrice);
+			System.out.println("åº”æ”¶é‡‘é¢" + totalPrice);
+			System.out.println("æ‰¾é›¶ï¼š " + returnPrice);
 		} else {
-			System.out.println("¸¶¿î½ğ¶î²»×ã");
+			System.out.println("ä»˜æ¬¾é‡‘é¢ä¸è¶³");
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }

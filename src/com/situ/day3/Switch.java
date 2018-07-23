@@ -9,29 +9,29 @@ public class Switch {
 	@Test
 	public void test1() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÔÂ·İ£º");
+		System.out.println("è¯·è¾“å…¥æœˆä»½ï¼š");
 		int month = scanner.nextInt();
 		switch (month) {
 		case 1:
-			System.out.println("31Ìì");
+			System.out.println("31å¤©");
 			break;
 		case 2:
-			System.err.println("28Ìì");
+			System.err.println("28å¤©");
 			break;
 		case 3:
-			System.out.println("31Ìì");
+			System.out.println("31å¤©");
 			break;
 		case 4:
 			break;
 		case 5:
-			System.out.println("31Ìì");
+			System.out.println("31å¤©");
 			break;
 		case 6:
 			break;
 		case 7:
 			break;
 		case 12:
-			System.out.println("31Ìì");
+			System.out.println("31å¤©");
 			break;
 		}
 	}
@@ -39,10 +39,10 @@ public class Switch {
 	@Test
 	public void test2() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÔÂ·İ£º");
+		System.out.println("è¯·è¾“å…¥æœˆä»½ï¼š");
 		int month = scanner.nextInt();
 		if (month <0 || month > 12) {
-			System.out.println("·Ç·¨µÄÊäÈë");
+			System.out.println("éæ³•çš„è¾“å…¥");
 			return;
 		}
 		
@@ -54,57 +54,54 @@ public class Switch {
 		case 8:
 		case 10:
 		case 12:
-			System.out.println("31Ìì");
+			System.out.println("31å¤©");
 			break;
 		case 4:
 		case 6:
 		case 9:
 		case 11:
-			System.err.println("30Ìì");
+			System.err.println("30å¤©");
 			break;
 		case 2:
-			// ÈÃ ÓÃ»§ÊäÈëÄê·İ£¬¸ù¾İÊÇ²»ÊÇÈòÄêÅĞ¶Á¶àÉÙÌì
+			// è®© ç”¨æˆ·è¾“å…¥å¹´ä»½ï¼Œæ ¹æ®æ˜¯ä¸æ˜¯é—°å¹´åˆ¤è¯»å¤šå°‘å¤©
 			//if (() || ()) {
 			//	
 			//}
 		default:
-			System.out.println("ÄúÊäÈëµÄ·Ç·¨");
+			System.out.println("æ‚¨è¾“å…¥çš„éæ³•");
 			System.out.println("default");
 			break;
 		}
 	}
 	
-	//¼ÆËãÑ§Éú³É¼¨µÄµÇ¼Ç£¬Ê¹ÓÃswitch
+	//è®¡ç®—å­¦ç”Ÿæˆç»©çš„ç™»è®°ï¼Œä½¿ç”¨switch
 	@Test
 	public void test3() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÑ§Éú³É¼¨:");
+		System.out.println("è¯·è¾“å…¥å­¦ç”Ÿæˆç»©:");
 		int score = scanner.nextInt();
 		if (score < 0 || score >100) {
-			System.out.println("·Ç·¨µÄÊäÈë");
+			System.out.println("éæ³•çš„è¾“å…¥");
 			return;
 		}
 		
 		switch (score / 10) {
 		case 6:// [60-69]
-			System.out.println("¼°¸ñ");
+			System.out.println("åŠæ ¼");
 			break;
 		case 7:
-			System.out.println("Ò»°ã");
+			System.out.println("ä¸€èˆ¬");
 			break;
 		case 8:
-			System.out.println("Á¼ºÃ");
+			System.out.println("è‰¯å¥½");
 			break;
 		case 9:
 		case 10:
-			System.out.println("ÓÅĞã");
+			System.out.println("ä¼˜ç§€");
 			break;
 		default:
-			System.out.println("²»¼°¸ñ");
+			System.out.println("ä¸åŠæ ¼");
 			break;
 		}
 	}
-	
-	
-	
 }

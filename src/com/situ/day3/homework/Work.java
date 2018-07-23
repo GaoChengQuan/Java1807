@@ -6,8 +6,8 @@ import org.junit.Test;
 
 public class Work {
 
-	//1¡¢int[] score={0,0,1,2,3,5,4,5,2,8,7,6,9,5,4,8,3,1,0,2,4,8,7,9,5,2,1,2,3,9};
-	//Çó³öÉÏÃæÊı×éÖĞ0-9·Ö±ğ³öÏÖµÄ´ÎÊı
+	//1ã€int[] score={0,0,1,2,3,5,4,5,2,8,7,6,9,5,4,8,3,1,0,2,4,8,7,9,5,2,1,2,3,9};
+	//æ±‚å‡ºä¸Šé¢æ•°ç»„ä¸­0-9åˆ†åˆ«å‡ºç°çš„æ¬¡æ•°
 	@Test
 	public void test1() {
 		int[] score={0,0,1,2,3,5,4,5,2,8,7,6,9,5,4,8,3,1,0,2,4,8,7,9,5,2,1,2,3,9};
@@ -23,9 +23,9 @@ public class Work {
 				count2++;
 			}
 		}
-		System.out.println("0³öÏÖ´ÎÊı£º" + count0);
-		System.out.println("1³öÏÖ´ÎÊı£º" + count1);
-		System.out.println("2³öÏÖ´ÎÊı£º" + count2);
+		System.out.println("0å‡ºç°æ¬¡æ•°ï¼š" + count0);
+		System.out.println("1å‡ºç°æ¬¡æ•°ï¼š" + count1);
+		System.out.println("2å‡ºç°æ¬¡æ•°ï¼š" + count2);
 	}
 	
 	@Test
@@ -35,33 +35,33 @@ public class Work {
 		for (int i = 0; i < score.length; i++) {
 			switch (score[i]) {
 			case 0:
-				countArray[0]++;//countArray[0]´æ·Å0³öÏÖ´ÎÊı
+				countArray[0]++;//countArray[0]å­˜æ”¾0å‡ºç°æ¬¡æ•°
 				break;
 			case 1:
-				countArray[1]++;//countArray[1]´æ·Å1³öÏÖµÄ´ÎÊı
+				countArray[1]++;//countArray[1]å­˜æ”¾1å‡ºç°çš„æ¬¡æ•°
 				break;
 			case 2:
-				countArray[2]++;//countArray[2]´æ·Å2³öÏÖµÄ´ÎÊı
+				countArray[2]++;//countArray[2]å­˜æ”¾2å‡ºç°çš„æ¬¡æ•°
 				break;
 			case 3:
-				countArray[3]++;//countArray[3]´æ·Å3³öÏÖµÄ´ÎÊı
+				countArray[3]++;//countArray[3]å­˜æ”¾3å‡ºç°çš„æ¬¡æ•°
 				break;
 			case 4:
-				countArray[4]++;//countArray[4]´æ·Å4³öÏÖµÄ´ÎÊı
+				countArray[4]++;//countArray[4]å­˜æ”¾4å‡ºç°çš„æ¬¡æ•°
 				break;
 			case 9:
-				countArray[9]++;//countArray[9]´æ·Å9³öÏÖµÄ´ÎÊı
+				countArray[9]++;//countArray[9]å­˜æ”¾9å‡ºç°çš„æ¬¡æ•°
 				break;
 			default:
 				System.out.println("default: " + score[i]);
 				break;
 			}
 		}
-		//System.out.println("0³öÏÖ´ÎÊı£º" + countArray[0]);
-		//System.out.println("1³öÏÖ´ÎÊı£º" +  countArray[1]);
-		//System.out.println("2³öÏÖ´ÎÊı£º" +  countArray[2]);
+		//System.out.println("0å‡ºç°æ¬¡æ•°ï¼š" + countArray[0]);
+		//System.out.println("1å‡ºç°æ¬¡æ•°ï¼š" +  countArray[1]);
+		//System.out.println("2å‡ºç°æ¬¡æ•°ï¼š" +  countArray[2]);
 		for (int i = 0; i < countArray.length; i++) {
-			System.out.println(i + "³öÏÖ´ÎÊı£º" + countArray[i]);
+			System.out.println(i + "å‡ºç°æ¬¡æ•°ï¼š" + countArray[i]);
 		}
 	}
 	
@@ -75,14 +75,14 @@ public class Work {
 					count++;
 				}
 			}
-			System.out.println("Êı×Ö" + i + "³öÏÖÁË" + count + "´Î");
+			System.out.println("æ•°å­—" + i + "å‡ºç°äº†" + count + "æ¬¡");
 			count = 0;
 		}
 
 	}
 
-	//2¡¢int[] score={0,0,1,2,3,5,4,5,2,8,7,6,9,5,4,8,3,1,0,2,4,8,7,9,5,2,1,2,3,9};
-	//ÒªÇóÇó³öÆäÖĞµÄÆæÊı¸öÊıºÍÅ¼Êı¸öÊı¡£
+	//2ã€int[] score={0,0,1,2,3,5,4,5,2,8,7,6,9,5,4,8,3,1,0,2,4,8,7,9,5,2,1,2,3,9};
+	//è¦æ±‚æ±‚å‡ºå…¶ä¸­çš„å¥‡æ•°ä¸ªæ•°å’Œå¶æ•°ä¸ªæ•°ã€‚
 	@Test
 	public void test3() {
 		int[] score={0,0,1,2,3,5,4,5,2,8,7,6,9,5,4,8,3,1,0,2,4,8,7,9,5,2,1,2,3,9};
@@ -95,57 +95,57 @@ public class Work {
 				jiShuCount++;
 			}
 		}
-		System.out.println("ÆæÊı¸öÊı£º " + jiShuCount);
-		System.out.println("Å¼Êı¸öÊı£º " + ouShuCount);
+		System.out.println("å¥‡æ•°ä¸ªæ•°ï¼š " + jiShuCount);
+		System.out.println("å¶æ•°ä¸ªæ•°ï¼š " + ouShuCount);
 	}
 	
-	//3¡¢ÊäÈëÒ»×éÑ§ÉúµÄ³É¼¨£¬Ê¹ÓÃÊı×é£¬È»ºó¼ÆËãËûÃÇµÄÆ½¾ùÖµ.
+	//3ã€è¾“å…¥ä¸€ç»„å­¦ç”Ÿçš„æˆç»©ï¼Œä½¿ç”¨æ•°ç»„ï¼Œç„¶åè®¡ç®—ä»–ä»¬çš„å¹³å‡å€¼.
 	@Test
 	public void test5() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÑ§ÉúÈËÊı£º");
+		System.out.println("è¯·è¾“å…¥å­¦ç”Ÿäººæ•°ï¼š");
 		int count = scanner.nextInt();
 		int[] scores = new int[count];
 		int sum = 0;
 		for (int i = 0; i < scores.length; i++) {
-			System.out.println("ÇëÊäÈëÑ§Éú³É¼¨£º ");
+			System.out.println("è¯·è¾“å…¥å­¦ç”Ÿæˆç»©ï¼š ");
 			scores[i] = scanner.nextInt();
 			sum = sum + scores[i];
 		}
-		System.out.println("Ñ§ÉúµÄÆ½¾ù³É¼¨£º " + (sum / scores.length));
+		System.out.println("å­¦ç”Ÿçš„å¹³å‡æˆç»©ï¼š " + (sum / scores.length));
 	}
 	
 	
-	//ÌâÄ¿£ºÒ»¸ö5Î»Êı£¬ÅĞ¶ÏËüÊÇ²»ÊÇ»ØÎÄÊı¡£¼´12321ÊÇ»ØÎÄÊı£¬¸öÎ»ÓëÍòÎ»ÏàÍ¬£¬Ê®Î»ÓëÇ§Î»ÏàÍ¬¡£
+	//é¢˜ç›®ï¼šä¸€ä¸ª5ä½æ•°ï¼Œåˆ¤æ–­å®ƒæ˜¯ä¸æ˜¯å›æ–‡æ•°ã€‚å³12321æ˜¯å›æ–‡æ•°ï¼Œä¸ªä½ä¸ä¸‡ä½ç›¸åŒï¼Œåä½ä¸åƒä½ç›¸åŒã€‚
 	@Test
 	public void test6() {
 		String str = "12321";
 		char[] array = str.toCharArray();
-		boolean isHuiWen = true;//³õÊ¼ÈÏÎª¾ÍÊÇ»ØÎÄ
+		boolean isHuiWen = true;//åˆå§‹è®¤ä¸ºå°±æ˜¯å›æ–‡
 		for (int i = 0; i < array.length / 2; i++) {
 			// i=0    array.length-1  
 			// i=1    array.length-2
 			if (array[i] != array[array.length - i -1]) {
-				isHuiWen = false;//ÓĞÒ»¸ö²»ÏëÏëµÈµÄ¾Í²»ÊÇ»ØÎÄ
+				isHuiWen = false;//æœ‰ä¸€ä¸ªä¸æƒ³æƒ³ç­‰çš„å°±ä¸æ˜¯å›æ–‡
 				break;
 			}
 		}
 		if (isHuiWen) {
-			System.out.println("ÊÇ»ØÎÄ");
+			System.out.println("æ˜¯å›æ–‡");
 		} else {
-			System.out.println("²»ÊÇ»ØÎÄ");
+			System.out.println("ä¸æ˜¯å›æ–‡");
 		}
 	}
 
-	//ÊäÈëÒ»ĞĞ×Ö·û£¬·Ö±ğÍ³¼Æ³öÆäÖĞÓ¢ÎÄ×ÖÄ¸¡¢¿Õ¸ñ¡¢Êı×ÖºÍÆäËü×Ö·ûµÄ¸öÊı¡£
+	//è¾“å…¥ä¸€è¡Œå­—ç¬¦ï¼Œåˆ†åˆ«ç»Ÿè®¡å‡ºå…¶ä¸­è‹±æ–‡å­—æ¯ã€ç©ºæ ¼ã€æ•°å­—å’Œå…¶å®ƒå­—ç¬¦çš„ä¸ªæ•°ã€‚
 	@Test
 	public void test66() {
-		System.out.println("ÇëÊäÈëÒ»ĞĞ×Ö·û:");
+		System.out.println("è¯·è¾“å…¥ä¸€è¡Œå­—ç¬¦:");
 		Scanner scanner = new Scanner(System.in);
 		String str = scanner.nextLine();
 		char[] array = str.toCharArray();
-		int digital = 0;//Í³¼Æ³öÏÖÊı×Ö¸öÊı
-		int character = 0;//Í³¼Æ³öÏÖ×Ö·û¸öÊı
+		int digital = 0;//ç»Ÿè®¡å‡ºç°æ•°å­—ä¸ªæ•°
+		int character = 0;//ç»Ÿè®¡å‡ºç°å­—ç¬¦ä¸ªæ•°
 		int blank = 0;
 		int other = 0;
 		for (int i = 0; i < array.length; i++) {
@@ -161,21 +161,21 @@ public class Work {
 				other++;
 			}
 		}
-		System.out.println("Êı×Ö¸öÊı£º " + digital);
-		System.out.println("×ÖÄ¸¸öÊı£º " + character);
-		System.out.println("¿Õ¸ñ¸öÊı£º " + blank);
-		System.out.println("ÆäËû¸öÊı£º " + other);
+		System.out.println("æ•°å­—ä¸ªæ•°ï¼š " + digital);
+		System.out.println("å­—æ¯ä¸ªæ•°ï¼š " + character);
+		System.out.println("ç©ºæ ¼ä¸ªæ•°ï¼š " + blank);
+		System.out.println("å…¶ä»–ä¸ªæ•°ï¼š " + other);
 	}
 	
-	//ÌâÄ¿£ºÊäÈëÈı¸öÕûÊıx,y,z£¬Çë°ÑÕâÈı¸öÊıÓÉĞ¡µ½´óÊä³ö¡£
+	//é¢˜ç›®ï¼šè¾“å…¥ä¸‰ä¸ªæ•´æ•°x,y,zï¼Œè¯·æŠŠè¿™ä¸‰ä¸ªæ•°ç”±å°åˆ°å¤§è¾“å‡ºã€‚
 	@Test
 	public void test7() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("ÊäÈëµÚÒ»¸öÊı×Ö£º");
+		System.out.println("è¾“å…¥ç¬¬ä¸€ä¸ªæ•°å­—ï¼š");
 		int x = scanner.nextInt();
-		System.out.println("ÊäÈëµÚ¶ş¸öÊı×Ö£º");
+		System.out.println("è¾“å…¥ç¬¬äºŒä¸ªæ•°å­—ï¼š");
 		int y = scanner.nextInt();
-		System.out.println("ÊäÈëµÚÈı¸öÊı×Ö£º");
+		System.out.println("è¾“å…¥ç¬¬ä¸‰ä¸ªæ•°å­—ï¼š");
 		int z = scanner.nextInt();
 		if (x > y) {
 			int temp = x;
@@ -187,8 +187,8 @@ public class Work {
 			x = z;
 			z = temp;
 		}
-		//µ½ÕâÀï£¬x·Ö±ğºÍyºÍz±È½Ï£¬xÏÖÔÚ¾ÍÊÇ×îĞ¡Öµ
-		//½ÓÏÂÀ´Ö»Òª±È½ÏyºÍz¾Í¿ÉÒÔ
+		//åˆ°è¿™é‡Œï¼Œxåˆ†åˆ«å’Œyå’Œzæ¯”è¾ƒï¼Œxç°åœ¨å°±æ˜¯æœ€å°å€¼
+		//æ¥ä¸‹æ¥åªè¦æ¯”è¾ƒyå’Œzå°±å¯ä»¥
 		if (y > z) {
 			int temp = y;
 			y = z;

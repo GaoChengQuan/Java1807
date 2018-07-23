@@ -22,10 +22,10 @@ public class FunctionDemo {
 	
 
 	/**
-	 * ÇóÁ½¸öÊıµÄ×î´óÖµ
-	 * @param num1 ´«ÈëµÄÊıÖµ1
-	 * @param num2 ´«ÈëµÄÊıÖµ2
-	 * @return ·µ»Ø×î´óÖµ
+	 * æ±‚ä¸¤ä¸ªæ•°çš„æœ€å¤§å€¼
+	 * @param num1 ä¼ å…¥çš„æ•°å€¼1
+	 * @param num2 ä¼ å…¥çš„æ•°å€¼2
+	 * @return è¿”å›æœ€å¤§å€¼
 	 */
 	public static int max(int num1, int num2) {
 		int max;

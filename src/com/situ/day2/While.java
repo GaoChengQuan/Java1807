@@ -7,20 +7,20 @@ import org.junit.Test;
 public class While {
 	@Test
 	public void test1() {
-		//1¡¢Ñ­»·Ìõ¼şµÄ³õÊ¼»¯
-		 int i = 1;
-		//2¡¢Ñ­»·Ìõ¼şµÄ¿ØÖÆ
-		 while (i <= 5) {
+		// 1ã€å¾ªç¯æ¡ä»¶çš„åˆå§‹åŒ–
+		int i = 1;
+		// 2ã€å¾ªç¯æ¡ä»¶çš„æ§åˆ¶
+		while (i <= 5) {
 			System.out.println("HelloWorld!");
-			//3¡¢Ñ­»·Ìõ¼şµÄ¸Ä±ä£¨Ç÷ÏòÓÚÑ­»·Ìõ¼şµÄ½áÊø£©
+			// 3ã€å¾ªç¯æ¡ä»¶çš„æ”¹å˜ï¼ˆè¶‹å‘äºå¾ªç¯æ¡ä»¶çš„ç»“æŸï¼‰
 			i++;
 		}
-		 System.out.println("end");
+		System.out.println("end");
 	}
-	
+
 	// 1+2+3+4+...+100=5050
 	@Test
-	public  void test2() {
+	public void test2() {
 		int i = 1;
 		int sum = 0;
 		while (i <= 100) {
@@ -30,81 +30,81 @@ public class While {
 		}
 		System.out.println("sum: " + sum);
 	}
-	
-	// 1*9=9	2*9=18   3*9=27 ....  8*9=72   9*9=81
+
+	// 1*9=9 2*9=18 3*9=27 .... 8*9=72 9*9=81
 	@Test
 	public void test3() {
-		//1¡¢Ñ­»·Ìõ¼şµÄ³õÊ¼»¯
+		// 1ã€å¾ªç¯æ¡ä»¶çš„åˆå§‹åŒ–
 		int i = 1;
-		//2¡¢Ñ­»·Ìõ¼şµÄ¿ØÖÆ
-		
+		// 2ã€å¾ªç¯æ¡ä»¶çš„æ§åˆ¶
+
 		while (i <= 9) {
 			System.out.print(i + "*9=" + (i * 9) + "\t");
-			//3¡¢Ñ­»·Ìõ¼şµÄ¸Ä±ä£¨Ç÷ÏòÓÚÑ­»·Ìõ¼şµÄ½áÊø£©
+			// 3ã€å¾ªç¯æ¡ä»¶çš„æ”¹å˜ï¼ˆè¶‹å‘äºå¾ªç¯æ¡ä»¶çš„ç»“æŸï¼‰
 			i++;
 		}
 	}
-	
+
 	@Test
 	public void test4() {
 		// greater than or equal to 0.0 and less than 1.0.
-		// 			0.0-------------0.999999..
-		// *1000	0.0-------------999.9999....
-		// + 1		1.0-------------1000.999....
-		// (int)	1-------------1000
-		int random = (int)(Math.random() * 1000 + 1);
+		// 0.0-------------0.999999..
+		// *1000 0.0-------------999.9999....
+		// + 1 1.0-------------1000.999....
+		// (int) 1-------------1000
+		int random = (int) (Math.random() * 1000 + 1);
 		System.out.println(random);
-		System.out.println("²Â°É£¡");
+		System.out.println("çŒœå§ï¼");
 		Scanner scanner = new Scanner(System.in);
 		int num = scanner.nextInt();
-		while (num != random) {//Ã»ÓĞ²Â¶Ô¾Í¼ÌĞøÖ´ĞĞwhileÑ­»·
+		while (num != random) {// æ²¡æœ‰çŒœå¯¹å°±ç»§ç»­æ‰§è¡Œwhileå¾ªç¯
 			if (num > random) {
-				System.out.println("Ì«´óÁË");
+				System.out.println("å¤ªå¤§äº†");
 			} else if (num < random) {
-				System.out.println("Ì«Ğ¡ÁË");
+				System.out.println("å¤ªå°äº†");
 			}
-			
-			System.out.println("²Â°É£¡");
+
+			System.out.println("çŒœå§ï¼");
 			num = scanner.nextInt();
 		}
-		//²Â¶ÔÁË
-		System.out.println("¹§Ï²Äã£¬²Â¶ÔÁË");
+		// çŒœå¯¹äº†
+		System.out.println("æ­å–œä½ ï¼ŒçŒœå¯¹äº†");
 	}
-	
+
 	@Test
 	public void test5() {
 		// greater than or equal to 0.0 and less than 1.0.
-		// 			0.0-------------0.999999..
-		// *1000	0.0-------------999.9999....
-		// + 1		1.0-------------1000.999....
-		// (int)	1-------------1000
-		int random = (int)(Math.random() * 1000 + 1);
+		// 0.0-------------0.999999..
+		// *1000 0.0-------------999.9999....
+		// + 1 1.0-------------1000.999....
+		// (int) 1-------------1000
+		int random = (int) (Math.random() * 1000 + 1);
 		System.out.println(random);
 		Scanner scanner = new Scanner(System.in);
-		while (true) {// ÎŞÏßÑ­»·
-			System.out.println("²Â°É£¡");
+		while (true) {// æ— çº¿å¾ªç¯
+			System.out.println("çŒœå§ï¼");
 			int num = scanner.nextInt();
 			if (num > random) {
-				System.out.println("Ì«´óÁË");
+				System.out.println("å¤ªå¤§äº†");
 			} else if (num < random) {
-				System.out.println("Ì«Ğ¡ÁË");
+				System.out.println("å¤ªå°äº†");
 			} else {// num == random
-				System.out.println("¹§Ï²Äã£¬²Â¶ÔÁË");
-				break;//µ÷³öµ±Ç°Ñ­»·£¬Ö»ÄÜµ÷³öÒ»²ãÑ­»·
+				System.out.println("æ­å–œä½ ï¼ŒçŒœå¯¹äº†");
+				break;// è°ƒå‡ºå½“å‰å¾ªç¯ï¼Œåªèƒ½è°ƒå‡ºä¸€å±‚å¾ªç¯
 			}
 		}
 		System.out.println("end");
 	}
-	
+
 	@Test
-public void test6() {
-	Scanner scanner = new Scanner(System.in);
-	int pwd = 0;
-	// 123
-	do {
-		System.out.println("ÇëÊäÈëÃÜÂë£º");
-		pwd = scanner.nextInt();
-	} while (123 != pwd);
-}
-	
+	public void test6() {
+		Scanner scanner = new Scanner(System.in);
+		int pwd = 0;
+		// 123
+		do {
+			System.out.println("è¯·è¾“å…¥å¯†ç ï¼š");
+			pwd = scanner.nextInt();
+		} while (123 != pwd);
+	}
+
 }

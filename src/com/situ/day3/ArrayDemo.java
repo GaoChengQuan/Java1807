@@ -24,7 +24,7 @@ public class ArrayDemo {
 		double[] array1 = new double[3];
 		int[] array = new int[4];
 	}
-	
+
 	@Test
 	public void test2() {
 		int[] array = new int[4];
@@ -32,19 +32,19 @@ public class ArrayDemo {
 		array[1] = 34;
 		array[2] = 4;
 		array[3] = 56;
-		//System.out.println(array[0]);
-		//System.out.println(array.length);
+		// System.out.println(array[0]);
+		// System.out.println(array.length);
 		for (int i = 0; i < array.length; i++) {
-			//System.out.println(i);
+			// System.out.println(i);
 			System.out.println(array[i]);
 		}
 		System.out.println("----------");
-		//ÄæĞòÊä³ö
+		// é€†åºè¾“å‡º
 		for (int i = array.length - 1; i >= 0; i--) {
 			System.out.println(array[i]);
 		}
 	}
-	
+
 	@Test
 	public void test5() {
 		int[] array = new int[4];
@@ -53,27 +53,29 @@ public class ArrayDemo {
 		array[2] = 4;
 		array[3] = 56;
 		int result = sum(array);
-		System.out.println("Êı×éÀÛ¼ÓºÍ£º" + result);
-		//int maxValue = max(array);
-		//System.out.println("Êı×éÀïÃæ×î´óÖµ: " + maxValue);
+		System.out.println("æ•°ç»„ç´¯åŠ å’Œï¼š" + result);
+		// int maxValue = max(array);
+		// System.out.println("æ•°ç»„é‡Œé¢æœ€å¤§å€¼: " + maxValue);
 	}
-	
+
 	public int max(int[] array) {
-		int maxValue = array[0];//ÏÈ¼Ù¶¨µÚÒ»¸öÊıÊÇ×î´óµÄ
+		int maxValue = array[0];// å…ˆå‡å®šç¬¬ä¸€ä¸ªæ•°æ˜¯æœ€å¤§çš„
 		for (int i = 1; i < array.length; i++) {
-			//Êı×éºóÃæÔªËØºÍmaxValue±È½Ï£¬Èç¹û±ÈmaxValue´ó£¬
-			//¾Í¸üĞÂmaxValueÖµÎªµ±Ç°ÔªËØ
+			// æ•°ç»„åé¢å…ƒç´ å’ŒmaxValueæ¯”è¾ƒï¼Œå¦‚æœæ¯”maxValueå¤§ï¼Œ
+			// å°±æ›´æ–°maxValueå€¼ä¸ºå½“å‰å…ƒç´ 
 			if (maxValue < array[i]) {
 				maxValue = array[i];
 			}
 		}
 		return maxValue;
 	}
-	
+
 	/**
-	 * ·µ»ØÊı×éµÄÀÛ¼ÓºÍ
-	 * @param array ´«ÈëÊı×é
-	 * @return ÀÛ¼ÓºÍ
+	 * è¿”å›æ•°ç»„çš„ç´¯åŠ å’Œ
+	 * 
+	 * @param array
+	 *            ä¼ å…¥æ•°ç»„
+	 * @return ç´¯åŠ å’Œ
 	 */
 	public int sum(int[] array) {
 		int sum = 0;
@@ -82,7 +84,7 @@ public class ArrayDemo {
 		}
 		return sum;
 	}
-	
+
 	@Test
 	public void test44() {
 		int[] array = new int[4];
@@ -91,21 +93,21 @@ public class ArrayDemo {
 		array[2] = 4;
 		array[3] = 56;
 		for (int i = 0; i <= array.length; i++) {
-			System.out.println(array[i]);//array[4]
+			System.out.println(array[i]);// array[4]
 		}
 	}
-	
+
 	@Test
 	public void countNum() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("ÇéÊäÈë£º");
+		System.out.println("æƒ…è¾“å…¥ï¼š");
 		String line = scanner.next();
 		char[] charLine = line.toCharArray();
 		int characterCount = 0;
 		int blankCount = 0;
 		int digitalCount = 0;
 		int otherCount = 0;
-		
+
 		for (int i = 0; i < charLine.length; i++) {
 			char ch = charLine[i];
 			if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
@@ -118,19 +120,11 @@ public class ArrayDemo {
 				otherCount++;
 			}
 		}
-		
-		System.out.println("×Ö·ûµÄ¸öÊı£º " + characterCount);
-		System.out.println("¿Õ¸ñµÄ¸öÊı£º " + blankCount);
-		System.out.println("Êı×ÖµÄ¸öÊı£º " + digitalCount);
-		System.out.println("ÆäËûµÄ¸öÊı£º " + otherCount);
+
+		System.out.println("å­—ç¬¦çš„ä¸ªæ•°ï¼š " + characterCount);
+		System.out.println("ç©ºæ ¼çš„ä¸ªæ•°ï¼š " + blankCount);
+		System.out.println("æ•°å­—çš„ä¸ªæ•°ï¼š " + digitalCount);
+		System.out.println("å…¶ä»–çš„ä¸ªæ•°ï¼š " + otherCount);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
