@@ -1,7 +1,5 @@
 package com.situ.day5;
 
-import java.security.AlgorithmParameterGenerator;
-
 //实体类
 public class Student {
 	private int id;
@@ -21,7 +19,6 @@ public class Student {
 	}
 	
 	public Student(int id, String name, String className) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.className = className;
