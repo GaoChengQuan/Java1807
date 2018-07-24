@@ -3,6 +3,13 @@ package com.situ.day4;
 import org.junit.Test;
 
 public class BreakContinue {
+	static Student student;
+	public static void main(String[] args) {
+		System.out.println(student);//null
+		System.out.println(student.id);//NullPointerException
+	}
+	
+	
 	@Test
 	public void test1() {
 		for (int i = 0; i < 6; i++) {
