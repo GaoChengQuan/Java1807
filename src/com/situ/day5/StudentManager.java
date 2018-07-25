@@ -2,7 +2,6 @@ package com.situ.day5;
 
 import java.util.Scanner;
 
-import org.omg.DynamicAny.NameDynAnyPairSeqHelper;
 
 public class StudentManager {
 	public static void main(String[] args) {
@@ -10,18 +9,7 @@ public class StudentManager {
 		System.out.println("请输入学生数量： ");
 		int count = scanner.nextInt();
 		Student[] students = new Student[count];
-		for (int i = 0; i < students.length; i++) {
-			System.out.println("请输入学生id：");
-			int id = scanner.nextInt();
-			System.out.println("请输入学生的名字： ");
-			String name = scanner.next();
-			System.out.println("请输入学生的年龄： ");
-			int age = scanner.nextInt();
-			System.out.println("请输入学生的班级： ");
-			String className = scanner.next();
-			Student student = new Student(id, name, age, className);
-			students[i] = student;
-		}
+		inputStudents(students);
 		
 		System.out.println("学生信息列表");
 		for (int i = 0; i < students.length; i++) {
@@ -39,6 +27,7 @@ public class StudentManager {
 			System.out.println("根据班级查找：	4");
 			System.out.println("退出程序： 	0");
 			System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+			
 			int type = scanner.nextInt();
 			if (type == 0) {
 				System.out.println("退出程序");
@@ -47,7 +36,20 @@ public class StudentManager {
 			
 			switch (type) {
 			case 1://根据id查找    Magic Number
-				System.out.println("id");
+				System.out.println("请输入要查询的学生id：");
+				int idSearch = scanner.nextInt();
+				boolean isSearchByIdFind = false;
+				for (int i = 0; i < students.length; i++) {
+					Student student = students[i];
+					int id = student.getId();
+					if (idSearch == id) {
+						System.out.println(student);
+						isSearchByIdFind = true;
+					}
+				}
+				if (isSearchByIdFind == false) {
+					System.out.println("没有该id的学生");
+				}
 				break;
 			case 2: 
 				System.out.println("请输入要查询的学生姓名: ");
@@ -75,6 +77,22 @@ public class StudentManager {
 			default:
 				break;
 			}
+		}
+	}
+
+	public static void inputStudents(Student[] students) {
+		Scanner scanner = new Scanner(System.in);
+		for (int i = 0; i < students.length; i++) {
+			System.out.println("请输入学生id：");
+			int id = scanner.nextInt();
+			System.out.println("请输入学生的名字： ");
+			String name = scanner.next();
+			System.out.println("请输入学生的年龄： ");
+			int age = scanner.nextInt();
+			System.out.println("请输入学生的班级： ");
+			String className = scanner.next();
+			Student student = new Student(id, name, age, className);
+			students[i] = student;
 		}
 	}
 }
