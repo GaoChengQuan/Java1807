@@ -1,11 +1,11 @@
 package com.situ.day6.cal;
 
-public class Cal {
+public class Cal /*extends Object*/{
 	protected int num1;
 	protected int num2;
 	
 	public Cal() {
-		super();
+		//super();
 	}
 
 	public Cal(int num1, int num2) {

@@ -25,6 +25,15 @@ public class CalTest {
 	}
 	
 	@Test
+	public void test4() {
+		Add add = new Add(3, 5);
+		int result = add.getResult();
+		System.out.println(result);
+	}
+	
+	
+	
+	@Test
 	public void test1() {
 		cal(new Add(3, 5));
 		cal(new Sub(3, 5));
