@@ -29,6 +29,9 @@ public class CalTest {
 		Add add = new Add(3, 5);
 		int result = add.getResult();
 		System.out.println(result);
+		
+		Cal cal = new Cal(3, 5);
+		cal.getResult();
 	}
 	
 	
